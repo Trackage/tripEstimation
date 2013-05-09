@@ -1,0 +1,81 @@
+
+## get.sst
+importFrom(sp, "coordinates<-", "gridded<-", as.image.SpatialGridDataFrame)
+
+## position.logp
+importFrom(zoo, na.approx, na.approx.default)
+
+## mkCalibration
+ importFrom(mgcv, gam, s)
+
+
+
+importFrom(lattice, xyplot)
+
+## satellite.model / solar.model
+
+importFrom(sp, CRS)
+importFrom(rgdal, CRSargs, project)
+
+## not until 2.14
+## importFrom(locfit, locfit, predict.locfit)
+
+
+## export(as.image.pimg)
+## export(as.local.pimg)
+## export(as.matrix.pimg)
+export(astro)
+##export(behav.bin)
+##export(bin.pimg)
+export(bits)
+export("bits<-")
+export(bmvnorm.proposal)
+export(chain.dim)
+export(chain.read)
+export(chain.write)
+export(chunk.bin)
+export(combine)
+##export(coords.pimg)
+export(elevation)
+export(EQUHOR)
+export(FRAC)
+export(get.mask)
+##export(get.pimgs)
+export(get.sst)
+export(initialize.x)
+export(julcent)
+export(julday)
+export(k.prior)
+export(light.quantile)
+export(LMST)
+export(lunar)
+export(metropolis)
+export(metropolis0)
+export(mini.sun)
+export(MJD)
+export(mkCalibration)
+export(mkElevationSeg)
+export(mkLookup)
+export(mkMaskObject)
+export(mkNLPosterior)
+export(mkSmall)
+export(mvnorm.proposal)
+export(norm.proposal)
+export(old.dist.gc)
+export(old.find.init)
+export(old.metropolis)
+export(old.mkLookup)
+export(pick)
+export(picksegs)
+export(pimg)
+export(pimg.list)
+export(POLAR)
+export(position.logp)
+export(satellite.model)
+export("set.mask<-")
+export(show.segment)
+export(solar)
+export(solar.model)
+## export(sst.interp)
+## export(sst.interp1)
+## export(unzipper)

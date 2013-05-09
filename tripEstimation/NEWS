@@ -1,0 +1,469 @@
+Changes to version 0.0-39
+
+	o removed get.sst, sst.interp and supporting functions to meet CRAN licensing needs, now no need for akima or locfit
+
+Changes to version 0.0-38
+
+	o added check for very short trips that break the windowing in position.logp
+
+	o renamed CHANGES to NEWS
+
+Changes to version 0.0-37
+
+	o reverted to Suggests for locfit, since that package has no namespace
+
+Changes to version 0.0-36
+
+	o added a package NAMESPACE
+
+	o reversed order of CHANGES file entries
+
+	o fixed mis-order in warning message use of CRS/CRSargs in
+	satellite.model and solar.model
+
+
+Changes to version 0.0-35
+	
+	o Sanity test for NAs and class in the data for mkLookup. 
+		
+Changes to version 0.0-34
+	
+	o Added functions get.sst, sst.interp and sst.interp1. 
+	
+Changes to version 0.0-33
+
+
+	o added functions mkMaskObject and "set.mask<-"
+
+	o added winoffset argument to position.logp
+
+	o Modified the algorithm used by position.logp
+	
+Changes to version 0.0-30
+
+
+	
+	o added time vector to output of solar.model to make keeping track of the values simpler
+	
+	o Fixed bug in position.logp with incorrect check for is.null(start) 
+	
+Changes to version 0.0-30
+	
+	o Fixed stray boilerplate "pkg" references in .Rd files. 
+	
+Changes to version 0.0-29
+	
+	o New build version to get around problems submitting to CRAN. 
+
+Changes to version 0.0-28
+
+	Thanks to Nick.Ellis@csiro.au for the report.  2009-05-29
+        ported from Montenbruck and Pfleger (1994).  
+        between the values from elevation() and the astro() functions
+        o Fixed an embarassing error in POLAR that caused a disparity
+        
+        o Added transformation capacity to satellite.model
+        
+        o Added proj.string to satellite.model
+        
+        warning message about logical to double type conversion.
+        o Fixed broken checks in solar.model that resulted in worrying
+        
+        match solar.model
+        satellite.model with behav.dist, behav.mean and behav.sd to
+        o Replaced speed.dist, speed.mean and speed.sd arguments in
+        
+        replaced by pmax.int, pmin.int
+        o Removed fast.pmax and fast.pmin from solar/satellite.model,
+        
+	probability control (new prob arg)
+	o Updated position.logp to more sensibly allow quantile
+	
+Changes to version 0.0-27
+	
+	o Fixed a bad mistake from the last build in solar.model
+	
+Changes to version 0.0-26
+	
+	
+	David Pinaud)
+	o Fixed missing transform function from solar.model (thanks to
+	
+Changes to version 0.0-25
+	
+	
+	
+	solar
+	
+	elevation
+	
+	julday
+	julcent
+	
+	---------
+	SOLAR
+	
+	solar.model
+	satellite.model
+	
+	norm.proposal
+	mvnorm.proposal
+	bmvnorm.proposal
+	
+	metropolis0
+	metropolis
+	
+			## k.prior DELETED
+	------------------
+	GEO.METROPOLIS
+	
+			##reynolds DELETED
+			##podaac   DELETED
+	mkLookup 
+	
+	mkTempMask
+	mkSmall
+	mkDepthMask
+	get.mask
+	
+			## fetch.topo DELETED
+	
+	bits<-
+	bits
+	--------
+	MASKS
+	
+	
+	picksegs
+	pick
+	
+	mkCalibration
+	
+	show.segment
+	light.quantile
+	position.logp
+	initialize.x
+	
+	
+	----------------
+	MISCELLANEOUS
+	
+	old.mkLookup
+	old.metropolis
+	old.find.init
+	old.dist.gc
+	mkNLPosterior
+	mkElevationSeg
+	------------------
+	OLD GEO.METROPOLIS
+	
+	POLAR
+	MJD
+	mini.sun
+	lunar
+	LMST
+	FRAC
+	EQUHOR
+	astro
+	-----------
+	MINI ASTRO
+	
+	
+		
+	R files
+	shows the grouping of functions in doc, sometimes also in the
+	o restructured package with documentation, the following list
+
+Changes to version 0.0-17
+
+	
+	
+	distance functions appropriately - km units are assumed
+	o solar.model also accepts a proj4 string, and creates
+		
+	behav.sigma
+	model - the arguments have become behav, behav.mean and
+	o solar.model now has support for "distance" as well as speed
+	  
+	  elevation "ekstrom" arguments
+	  outside a given range, this is specified either by light or
+	o solar.model can now put a larger variance on light levels
+	
+	o show.segment now has "..." to pass in graphics options
+	
+	class for imaging the array
+	o position.logp has some changes in that I've added an S3
+	
+	o metropolis now reports on progress
+
+	needs some fixing in terms of naming etc.)
+	intersections of large logp values (not the best function yet,
+	o init.x.diag - added function to initialize off running
+	
+	o mkCalibration now allows a single segment
+
+	o Removed model.utils and put it all in solar.model
+Changes to version 0.0.10
+
+	o I'm testing automatic Subversion updating to R repository
+Changes to version 0.0.9
+
+ 
+	o fetch.topo now uses rgdal to read an ESRI FLT surface
+	
+	default is they are not passed in, but initialize occurs after
+	o Changed operation of start.x and start.z in solar.model -
+	
+Changes to version 0.0-8
+
+	o Added function findSegments
+	
+Changes to version 0.0-7
+
+
+	logp.behavioural
+	o fixed some bugs (not very well) in mkLookup and
+	
+Changes to version 0.0-6
+
+	of the time
+	o changed defaults in model.utils to avoid require(rgdal) most
+	
+Changes to version 0.0-5
+
+	o incorporated new functions for diagnostics
+	
+Changes to version 0.0-4
+
+Changes to version 0.0-34
+		
+	o Sanity test for NAs and class in the data for mkLookup. 
+	
+Changes to version 0.0-33
+	
+	o Added functions get.sst, sst.interp and sst.interp1. 
+	
+Changes to version 0.0-30
+	
+	o Modified the algorithm used by position.logp
+
+	o added winoffset argument to position.logp
+
+	o added functions mkMaskObject and "set.mask<-"
+
+
+Changes to version 0.0-30
+	
+	o Fixed bug in position.logp with incorrect check for is.null(start) 
+	
+	o added time vector to output of solar.model to make keeping
+	track of the values simpler
+
+
+Changes to version 0.0-29
+	
+	o Fixed stray boilerplate "pkg" references in .Rd files. 
+	
+Changes to version 0.0-28
+
+	o New build version to get around problems submitting to CRAN. 
+	
+Changes to version 0.0-27
+	
+	o Updated position.logp to more sensibly allow quantile
+	probability control (new prob arg)
+        
+        o Removed fast.pmax and fast.pmin from solar/satellite.model,
+        replaced by pmax.int, pmin.int
+        
+        o Replaced speed.dist, speed.mean and speed.sd arguments in
+        satellite.model with behav.dist, behav.mean and behav.sd to
+        match solar.model
+        
+        o Fixed broken checks in solar.model that resulted in worrying
+        warning message about logical to double type conversion.
+        
+        o Added proj.string to satellite.model
+        
+        o Added transformation capacity to satellite.model
+        
+        o Fixed an embarassing error in POLAR that caused a disparity
+        between the values from elevation() and the astro() functions
+        ported from Montenbruck and Pfleger (1994).  
+	Thanks to Nick.Ellis@csiro.au for the report.  2009-05-29
+
+Changes to version 0.0-26
+	
+	o Fixed a bad mistake from the last build in solar.model
+	
+Changes to version 0.0-25
+	
+	o Fixed missing transform function from solar.model (thanks to
+	David Pinaud)
+	
+	
+Changes to version 0.0-17
+
+	o restructured package with documentation, the following list
+	shows the grouping of functions in doc, sometimes also in the
+	R files
+		
+	
+	
+	MINI ASTRO
+	-----------
+	astro
+	EQUHOR
+	FRAC
+	LMST
+	lunar
+	mini.sun
+	MJD
+	POLAR
+	
+	OLD GEO.METROPOLIS
+	------------------
+	mkElevationSeg
+	mkNLPosterior
+	old.dist.gc
+	old.find.init
+	old.metropolis
+	old.mkLookup
+	
+	MISCELLANEOUS
+	----------------
+	
+	
+	initialize.x
+	position.logp
+	light.quantile
+	show.segment
+	
+	mkCalibration
+	
+	pick
+	picksegs
+	
+	
+	MASKS
+	--------
+	bits
+	bits<-
+	
+			## fetch.topo DELETED
+	
+	get.mask
+	mkDepthMask
+	mkSmall
+	mkTempMask
+	
+	mkLookup 
+			##podaac   DELETED
+			##reynolds DELETED
+	
+	GEO.METROPOLIS
+	------------------
+			## k.prior DELETED
+	
+	metropolis
+	metropolis0
+	
+	bmvnorm.proposal
+	mvnorm.proposal
+	norm.proposal
+	
+	satellite.model
+	solar.model
+	
+	SOLAR
+	---------
+	
+	julcent
+	julday
+	
+	elevation
+	
+	solar
+	
+	
+	
+Changes to version 0.0.10
+	o Removed model.utils and put it all in solar.model
+
+	o mkCalibration now allows a single segment
+	
+	o init.x.diag - added function to initialize off running
+	intersections of large logp values (not the best function yet,
+	needs some fixing in terms of naming etc.)
+
+	o metropolis now reports on progress
+	
+	o position.logp has some changes in that I've added an S3
+	class for imaging the array
+	
+	o show.segment now has "..." to pass in graphics options
+	
+	o solar.model can now put a larger variance on light levels
+	  outside a given range, this is specified either by light or
+	  elevation "ekstrom" arguments
+	  
+	o solar.model now has support for "distance" as well as speed
+	model - the arguments have become behav, behav.mean and
+	behav.sigma
+		
+	o solar.model also accepts a proj4 string, and creates
+	distance functions appropriately - km units are assumed
+	
+	
+
+Changes to version 0.0.9
+	o I'm testing automatic Subversion updating to R repository
+
+Changes to version 0.0-8
+	
+	o Changed operation of start.x and start.z in solar.model -
+	default is they are not passed in, but initialize occurs after
+	
+	o fetch.topo now uses rgdal to read an ESRI FLT surface
+ 
+
+Changes to version 0.0-7
+	
+	o Added function findSegments
+
+Changes to version 0.0-6
+	
+	o fixed some bugs (not very well) in mkLookup and
+	logp.behavioural
+
+
+Changes to version 0.0-5
+	
+	o changed defaults in model.utils to avoid require(rgdal) most
+	of the time
+
+Changes to version 0.0-4
+	
+	o incorporated new functions for diagnostics
+
+Changes to version 0.0-3 
+
+	o Fixed a bug in reynolds, it needs some stray integers stripped out
+	(old Fortran something) - comments in the code show how to
+	replicate the test output from the site.  o Added capability
+	for gzipped files to reynolds, as well as "data" option to
+	return sst, ice, err, land or water.
+	
+	o Added k0 attenuation offset to find.init - seems to perform
+	better.
+
+	o Fixed a bug! in mkTempMask - it was using only the
+	initialized Reynolds dataset.
+
+
+Changes to Version 0.0-2
+o Recreated package completely
+
+Changes to version 0.0-1
+o Created package with all latest code
+

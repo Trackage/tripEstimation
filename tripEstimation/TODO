@@ -1,0 +1,6 @@
+Add checks to position.logp to ensure the mask is really in range, e.g. Ben Arthur's Pacific view issue 2012-02-15
+ - maybe lookup functions should store metadata on the mask itself so they can be checked 
+
+
+ 
+ 
