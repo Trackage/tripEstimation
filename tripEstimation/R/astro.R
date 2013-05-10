@@ -1,3 +1,4 @@
+## test comment
 `astro` <-
 function(lon, lat, astro.calc) {
 	RA <- astro.calc$RA
