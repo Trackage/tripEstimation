@@ -9,7 +9,8 @@ Functions to read SST data from online services, by specifying spatial
 and temporal bounds. 
 }
 \usage{
-get.sst(xlim = NULL, ylim = NULL, tlim = NULL, server = "http://atlas.nmfs.hawaii.edu/cgi-bin/reynolds_extract.py")
+get.sst(xlim = NULL, ylim = NULL, tlim = NULL,
+server = "http://atlas.nmfs.hawaii.edu/cgi-bin/reynolds_extract.py")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
