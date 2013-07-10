@@ -1,0 +1,24 @@
+citHeader("When citing the 'tripEstimation' package in publications please include:")
+
+bibentry(
+  bibtype="Article",
+  title = "Bayesian estimation of animal movement from archival and satellite tags.",
+  author = c(
+    person(c("Michael", "D."),"Sumner",role="aut"),
+    person(c("Simon", "J."),"Wotherspoon",role="aut"),
+    person(c("Mark", "A."),"Hindell",role="aut")),
+  journal = "PLoS ONE",
+  month = "Jan",
+  number = "10",
+  publisher = "Public Library of Science",
+  volume = "4",
+  year = "2009",
+  url = "http://dx.plos.org/10.1371/journal.pone.0007324")
+
+bibentry(
+  bibtype="Manual",
+  title = packageDescription("tripEstimation", fields = "Title"),
+  author = person(packageDescription("tripEstimation", fields = "Author")),
+  note = sprintf("R package version %s", packageDescription("tripEstimation", fields = "Version")),
+  url =  packageDescription("tripEstimation", fields = "URL"), 
+  year = format(Sys.Date(), "%Y"))
