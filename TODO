@@ -1,5 +1,10 @@
-Add checks to position.logp to ensure the mask is really in range, e.g. Ben Arthur's Pacific view issue 2012-02-15
+Add checks to position.logp to ensure the mask is really in range, e.g. Pacific view issue 2012-02-15
  - maybe lookup functions should store metadata on the mask itself so they can be checked 
+
+position.logp returns NA for fixed.release/recapture = NULL (fix with na.approx rule = 2)
+
+add makelookup functions to have just a bounding box
+
 
 
  
