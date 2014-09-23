@@ -1,7 +1,7 @@
 Package: tripEstimation
 Type: Package
-Title: Metropolis sampler and supporting functions for estimating
-        animal movement from archival tags and satellite fixes
+Title: Metropolis Sampler and Supporting Functions for Estimating
+        Animal Movement from Archival Tags and Satellite Fixes
 Version: 0.0-41
 Imports: lattice, mgcv, rgdal, sp, zoo
 Authors@R: c(person("Michael D.","Sumner", role = c("aut", "cre"),
