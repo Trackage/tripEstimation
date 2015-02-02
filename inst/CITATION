@@ -15,10 +15,16 @@ bibentry(
   year = "2009",
   url = "http://dx.plos.org/10.1371/journal.pone.0007324")
 
+  year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+  vers <- paste("R package version", meta$Version)
+  title <- meta$Title
+  author <- meta$Author
+  url <- meta$URL
 bibentry(
   bibtype="Manual",
-  title = packageDescription("tripEstimation", fields = "Title"),
-  author = person(packageDescription("tripEstimation", fields = "Author")),
-  note = sprintf("R package version %s", packageDescription("tripEstimation", fields = "Version")),
-  url =  packageDescription("tripEstimation", fields = "URL"), 
-  year = format(Sys.Date(), "%Y"))
+  title = title,
+  author = person(author),
+  note = sprintf("R package version %s", vers),
+  url =  url, 
+  year = year)
+
