@@ -27,7 +27,7 @@ Very little error checking is done.
 \seealso{ \code{\link{get.mask}} and related examples for creating and using 
 masks. 
 
-See \code{\link[sp]{overlay}}  for more general capabilities for overlays. }
+See \code{\link[sp]{over}}  for more general capabilities for overlays. }
 
 \keyword{manip }% at least one, from doc/KEYWORDS
 
