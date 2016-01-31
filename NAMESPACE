@@ -17,6 +17,13 @@ importFrom(lattice, xyplot)
 importFrom(sp, CRS)
 importFrom(rgdal, CRSargs, project)
 
+
+ importFrom("graphics", "locator", "matlines", "plot", "text")
+  importFrom("stats", "approxfun", "cov", "dgamma", "dnorm", "gaussian",
+             "predict", "quantile", "rnorm", "runif", "sd")
+  importFrom("utils", "capture.output", "download.file", "read.table",
+             "unzip")
+  
 ## not until 2.14
 ## importFrom(locfit, locfit, predict.locfit)
 

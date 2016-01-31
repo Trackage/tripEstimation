@@ -15,8 +15,8 @@ Authors@R: c(person("Michael D.","Sumner", role = c("aut", "cre"),
     email = "Simon.Wotherspoon@utas.edu.au"))
 Description: Data handling and estimation functions for animal movement
     estimation from archival or satellite tags. Helper functions are included
-    for making image summaries binned by time interval from MCMC simulations of
-    point data.
+    for making image summaries binned by time interval from Markov Chain Monte Carlo
+    simulations. 
 License: GPL-3
 NeedsCompilation: no
 ByteCompile: yes
