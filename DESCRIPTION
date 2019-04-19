@@ -20,4 +20,5 @@ Description: Data handling and estimation functions for animal movement
 License: GPL-3
 NeedsCompilation: no
 ByteCompile: yes
-URL: https://github.com/mdsumner/tripEstimation
+URL: https://github.com/Trackage/tripEstimation
+BugReports: https://github.com/Trackage/tripEstimation
