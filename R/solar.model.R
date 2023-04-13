@@ -63,13 +63,13 @@ if (dmz[1] != (dmx[1] - 1)) stop("number of X-proposals should be one more than 
 
     if (!any(grep("km", proj.string))) {
       warning("Distances will be calculated in the units of the coordinate system, but kilometres are assumed for speed.")
-      print(CRSargs(CRS(proj.string)))
+      print(proj.string)
     }
     dist <- function(a, b) {
       sqrt(rowSums((a - b)^2)) }
 
     transf <-  function(x, inv = FALSE) {
-      rubbish <- capture.output(res <- project(x, proj.string, inv))
+      rubbish <- capture.output(res <- reproj::reproj_xy(x, "+proj=longlat", source = proj.string))
       res
     }
   }

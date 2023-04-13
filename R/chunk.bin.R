@@ -13,7 +13,7 @@ function (filename, pimgs, weights = NULL, chunk = 2000, proj = NULL)
         if (m == 0)
             break
         A <- array(A, c(dm[-3], m))
-	if (!is.null(proj)) A[,1:2,] <- apply(A[,1:2,], 3, function(x) project(x, proj))
+	if (!is.null(proj)) A[,1:2,] <- apply(A[,1:2,], 3, function(x) reproj::reproj_xy(x, proj, source = "+proj=longlat"))
 	pimgs <- behav.bin(A, pimgs, weights = weights)
 	cat(cnt[i], "...\n", sep = "")
 	i <- i + 1

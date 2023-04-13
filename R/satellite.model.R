@@ -32,13 +32,13 @@ if (length(day) != nrow(X)) stop("length of times should match number of locatio
 
     if (!any(grep("km", proj.string))) {
       warning("Distances will be calculated in the units of the coordinate system, but kilometres are assumed for the units of speed calculation.")
-      print(CRSargs(CRS(proj.string)))
+      print(proj.string)
     }
     dist <- function(a, b) {
       sqrt(rowSums((a - b)^2)) }
 
     transf <-  function(x, inv = FALSE) {
-      rubbish <- capture.output(res <- project(x, proj.string, inv))
+      rubbish <- capture.output(res <- reproj::reproj_xy(x, "+proj=longlat", source = proj.string))
       res
     }
   }
