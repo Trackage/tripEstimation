@@ -9,11 +9,11 @@
 \alias{POLAR}
 \title{Calculations for position of the sun and moon}
 \description{
- This set of functions provides simple position calculations for the sun and moon, 
+ This set of functions provides simple position calculations for the sun and moon,
  taken from Pascal routines published in Montenbruck and Pfleger (1994, Dunlop).
- 
+
  These are completely independent from the (specifically optimized) solar elevation
- calculations available via [elevation and solar]. 
+ calculations available via [elevation and solar].
 }
 \usage{
 astro(lon, lat, astro.calc)
@@ -38,35 +38,35 @@ POLAR(X, Y, Z)
    \item{lon}{vector of \code{lon}gitudes}
    \item{lat}{vector of \code{lat}itudes}
   \item{astro.calc}{list object containing \code{RA} right ascension }
-  
+
   %% EQUHOR
   \item{DEC}{declination}
   \item{TAU}{\code{TAU}  }
   \item{PHI}{ \code{PHI}  }
-  
-  %% FRAC 
+
+  %% FRAC
   \item{x}{number}
-  
+
   %% LMST
   \item{MJDay}{ modified julian day }
   \item{LAMBDA}{\code{LAMBDA} }
-  
+
   %% lunar / mini.sun
   \item{time}{ vector of date-times in POSIXct format }
-   
-  %% MJDay 
+
+  %% MJDay
   \item{date}{ vector of date-times in POSIXct format }
-  
+
   %% POLAR
   \item{X}{ x-coordinate}
   \item{Y}{ y-coordinate }
   \item{Z}{ z-coordinate }
-   
+
 }
 
 \value{
  \code{astro} returns a list object with the components of the moon or sun's
- position, 
+ position,
   \item{r }{rho component }
   \item{theta }{theta component - elevation}
   \item{phi}{phi component - azimuth}
@@ -110,9 +110,9 @@ op <- par(mfrow = c(2,1))
 plot(tm, rtp$theta, main = "solar elevation, Hobart")
 plot(tm, rtp$phi, main = "solar azimuth, Hobart")
 par(op)
-\dontrun{
+\donttest{
   elev.gmt <- mkElevationSeg(1, tm)
-  plot(tm, rtp$theta, main = "solar elevation mini.sun versus NOAA") 
+  plot(tm, rtp$theta, main = "solar elevation mini.sun versus NOAA")
   lines(tm, elev.gmt(1, 147, -42))
 }
 }

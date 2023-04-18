@@ -1,5 +1,9 @@
 Changes to version 0.0-45
 
+   o fixed some missing documentation
+
+   o really removed get.sst, that didn't work for a long time
+
    o remove rgdal, now import reproj
 
    o fix citation, thanks to T. Michelot

@@ -9,7 +9,7 @@
   Primarily for the purposes of initializing the estimation, these functions
   can also be used for diagnostic purposes.   \code{position.logp} produces
   grids of simplistic position likelihood for each twilight and uses
-  those to initialize positions for running estimations. 
+  those to initialize positions for running estimations.
 }
 \usage{
 position.logp(model, x1, x2, xrest = NULL, subset = 1:model$n,
@@ -44,17 +44,22 @@ show.segment(model, chain, segment, day, light, k, n = 50, ...)
   \item{start}{known position of release  }
   \item{end}{known position of recapture }
   %% show.segment
-  
+
   \item{segment}{ vector of segment data }
   \item{light}{ vector of light data }
   \item{k}{ desired segment to show }
   \item{n}{ length of vector to evaluate  }
    \item{...}{additional arguments to be passed to plot}
 }
-
+\value{
+ \code{initialize.x} returns a matrix with 3 columns, lon,lat,attenuation
+ \code{position.logp} returns a list with model running components
+ \code{show.segment} is used for its side effect, a plot of light level for a twilight segment
+ \code{light.quantile} returns a numeric vector
+}
 \details{ The primary function here is \code{position.logp}, for
  initializing the estimation for \code{\link{solar.model}} and
- \code{\link{metropolis0}}.  } 
+ \code{\link{metropolis0}}.  }
 
 \author{Michael D. Sumner }
 

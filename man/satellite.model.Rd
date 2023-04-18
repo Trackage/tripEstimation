@@ -2,11 +2,11 @@
 \alias{satellite.model}
 \title{ Function to create a satellite model object for metropolis location sampler }
 \description{
- A model to manage likelihood functions, environmental masks and behavioural 
+ A model to manage likelihood functions, environmental masks and behavioural
 likelihood functions for pre-derived satellite locations. There are some options for configuration,
 but this
 may be considered a template for any given model. The model \emph{function} exists
-simply to make the object construction simple. 
+simply to make the object construction simple.
 }
 \arguments{
   \item{day}{ vector of date-times for each light level }
@@ -32,11 +32,11 @@ estimate.
 Transformation of coordinates is supported via a simple function that
 only performs coordinate transforms if \code{proj.string} is not
 longlat. See \code{\link[rgdal]{project}} for the underlying functionality.
-} 
+}
 
 \value{ See \code{solar.model} for some related detail.  }
 
-\references{Sumner, Wotherspoon and Hindell (2009). Bayesian Estimation of Animal Movement from Archival and Satellite Tags, PLoS ONE. \url{http://dx.plos.org/10.1371/journal.pone.0007324}}
+\references{Sumner, Wotherspoon and Hindell (2009). Bayesian Estimation of Animal Movement from Archival and Satellite Tags, PLoS ONE. \url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0007324}}
 \author{ Michael D. Sumner }
 
 \note{

@@ -3,7 +3,7 @@
 \alias{julcent}
 \title{ Julian day and Julian century calculations from date-time values }
 \description{
-  Date values required by \code{\link{solar}}. 
+  Date values required by \code{\link{solar}}.
 }
 \usage{
 julday(tm)
@@ -15,8 +15,10 @@ julcent(time)
 
   \item{time}{ vector of date-times }
 }
-
-\references{\url{http://www.srrb.noaa.gov/highlights/sunrise/azel.html}}
+\value{
+  return numeric values
+}
+\references{\url{https://gml.noaa.gov/grad/solcalc/azel.html}}
 \author{ Michael D. Sumner }
 
 \keyword{ manip }

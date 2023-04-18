@@ -4,7 +4,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Create a collection of probability images, for MCMC binning. }
 \description{
- Pimage lists. 
+ Pimage lists.
 }
 \usage{
 pimg(xmin, xmax, xn, ymin, ymax, yn)
@@ -20,14 +20,16 @@ pimg.list(times, xlim, ylim, img.dim, Z = TRUE)
   \item{yn}{  \code{yn}  }
 
 
-  
+
   \item{times}{  \code{times}  }
   \item{xlim}{  \code{xlim}  }
   \item{ylim}{  \code{ylim}  }
   \item{img.dim}{  \code{img.dim}  }
   \item{Z}{  \code{Z}  }
 }
-
+\value{
+ returns a Pimage list
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{manip}

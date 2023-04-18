@@ -1,6 +1,8 @@
 "bits" <-
 function(object,bit) {
-  (object %/% (2^bit)) %% 2
+  out <- (object %/% (2^bit)) %% 2
+  if (!is.null(dim(object))) dim(out) <- dim(object)
+  out
 }
 
 "bits<-" <-

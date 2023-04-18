@@ -3,7 +3,7 @@
 \title{ Calculate solar postion parameters}
 \description{
 	Pre-calculates astronomical solar position components for
-	Earth-location sampling functions. 
+	Earth-location sampling functions.
 }
 \usage{
 solar(day)
@@ -18,11 +18,11 @@ A list of the following values for each input time:
   \item{sinSolarDec }{sine solar declination}
   \item{cosSolarDec}{cosine solar declination}
 }
-\references{ \url{http://www.srrb.noaa.gov/highlights/sunrise/azel.html}}
+\references{ \url{https://gml.noaa.gov/grad/solcalc/azel.html}}
 \author{ Michael D. Sumner }
-\note{ 
-No account is made for horizon refraction, but this was available in the original 
-(Javascript) code. 
+\note{
+No account is made for horizon refraction, but this was available in the original
+(Javascript) code.
 }
 
 \keyword{ manip }

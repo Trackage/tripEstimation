@@ -2,7 +2,7 @@
 \alias{elevation}
 \title{ Calculate elevation of astronomical objects}
 \description{
-  Function to calculate elevation. 
+  Function to calculate elevation.
 }
 \usage{
 elevation(lon, lat, sun)
@@ -13,9 +13,12 @@ elevation(lon, lat, sun)
 	\item{sun}{ pre-stored values  as returned by
 	  \code{\link{solar}} or \code{\link{lunar}}}
 }
+\value{
+\code{elevation} returns a numeric vector of solar (or lunar) elevation as degrees above or below the horizone
 
+}
 \references{
-\url{http://www.srrb.noaa.gov/highlights/sunrise/azel.html}
+\url{https://gml.noaa.gov/grad/solcalc/azel.html}
 }
 \author{Michael D. Sumner}
 

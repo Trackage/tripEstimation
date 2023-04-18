@@ -1,5 +1,5 @@
 
-## get.sst
+
 importFrom(sp, "coordinates<-", "gridded<-", as.image.SpatialGridDataFrame)
 
 ## position.logp
@@ -47,8 +47,7 @@ export(elevation)
 export(EQUHOR)
 export(FRAC)
 export(get.mask)
-##export(get.pimgs)
-export(get.sst)
+
 export(initialize.x)
 export(julcent)
 export(julday)

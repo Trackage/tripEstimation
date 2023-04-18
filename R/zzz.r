@@ -1,4 +1,4 @@
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("tripEstimation has been superseded by SGAT, please look at using that package instead:\nhttps://github.com/SWotherspoon/SGAT")
+  packageStartupMessage("tripEstimation has been superseded by SGAT and SGATII:\nhttps://github.com/SWotherspoon/SGAT, https://github.com/SWotherspoon/SGATII")
   invisible()
 }
