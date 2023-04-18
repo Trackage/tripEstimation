@@ -110,11 +110,10 @@ op <- par(mfrow = c(2,1))
 plot(tm, rtp$theta, main = "solar elevation, Hobart")
 plot(tm, rtp$phi, main = "solar azimuth, Hobart")
 par(op)
-\donttest{
   elev.gmt <- mkElevationSeg(1, tm)
   plot(tm, rtp$theta, main = "solar elevation mini.sun versus NOAA")
   lines(tm, elev.gmt(1, 147, -42))
-}
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
