@@ -31,7 +31,7 @@ estimate.
 
 Transformation of coordinates is supported via a simple function that
 only performs coordinate transforms if \code{proj.string} is not
-longlat. See \code{\link[rgdal]{project}} for the underlying functionality.
+longlat.
 }
 
 \value{ See \code{solar.model} for some related detail.  }

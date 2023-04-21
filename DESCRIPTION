@@ -2,7 +2,7 @@ Package: tripEstimation
 Type: Package
 Title: Metropolis Sampler and Supporting Functions for Estimating
     Animal Movement from Archival Tags and Satellite Fixes
-Version: 0.0-45
+Version: 0.0-46
 Imports:
     lattice,
     mgcv,

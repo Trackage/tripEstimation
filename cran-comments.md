@@ -1,6 +1,9 @@
 ## R CMD check results
 
-tripEstimation 0.0-45 to remove dependency on rgdal. 
+tripEstimation 0.0-46
+
+* fixed unavailable references to rgdal documentation. 
+
 
 
 Thank you. 
